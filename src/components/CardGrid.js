@@ -1,19 +1,7 @@
 import React from 'react';
 import Card from './Card';
 
-export default function CardGrid() {
-	return (
-		<div className='card-grid'>
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-		</div>
-	);
+export default function CardGrid(props) {
+	const cardElements = props.cards.map((card) => <Card data={card} />);
+	return <div className='card-grid'>{cardElements};</div>;
 }
