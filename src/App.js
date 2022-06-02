@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import Modal from 'react-modal';
 import useWindowSize from 'react-use/lib/useWindowSize';
