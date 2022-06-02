@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/swatch-closely/static/css/main.845a5969.css",
+    "main.js": "/swatch-closely/static/js/main.ee1ced57.js",
+    "index.html": "/swatch-closely/index.html",
+    "main.845a5969.css.map": "/swatch-closely/static/css/main.845a5969.css.map",
+    "main.ee1ced57.js.map": "/swatch-closely/static/js/main.ee1ced57.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.845a5969.css",
+    "static/js/main.ee1ced57.js"
+  ]
+}
