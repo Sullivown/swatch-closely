@@ -8,7 +8,10 @@ export default function Header(props) {
 				<h1>Swatch Closely</h1>
 			</div>
 			<div className='flex-row'>
-				<div>Score: {props.score} / 10</div>
+				<div className='score-div'>
+					<span>Score: </span>
+					<span>{props.score} / 10</span>
+				</div>
 			</div>
 		</header>
 	);

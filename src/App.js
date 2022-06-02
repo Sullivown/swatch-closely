@@ -37,6 +37,7 @@ function App() {
 			cardsArr.push(CreateCard());
 		}
 
+		console.log(cardsArr);
 		return cardsArr;
 	}
 

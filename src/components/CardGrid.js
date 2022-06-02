@@ -9,5 +9,5 @@ export default function CardGrid(props) {
 			handleCardClick={props.handleCardClick}
 		/>
 	));
-	return <div className='card-grid'>{cardElements};</div>;
+	return <div className='card-grid'>{cardElements}</div>;
 }
