@@ -7,4 +7,4 @@ A colour swatch based memory game.
 ## How to play
 
 Try to click on all ten colours without clicking on the same colour twice!
-Colours are randomly generated each game so some setups will be easier than others/
+Colours are randomly generated each game so some setups will be easier than others.
