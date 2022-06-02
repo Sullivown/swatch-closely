@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Modal from 'react-modal';
+import useWindowSize from 'react-use/lib/useWindowSize';
 import Confetti from 'react-confetti';
 
 import CreateCard from './factories/CreateCard';
@@ -8,11 +9,15 @@ import shuffleArray from './helpers/shuffleArray';
 import Header from './components/Header';
 import Main from './components/Main';
 
+Modal.setAppElement('#root');
+
 function App() {
 	const [cards, setCards] = useState(generateCards());
 	const [score, setScore] = useState(0);
 	const [gameOver, setGameOver] = useState(false);
 	const [modalIsOpen, setModalIsOpen] = useState(false);
+
+	const { width, height } = useWindowSize();
 
 	// Check for win state
 	useEffect(() => {
@@ -36,8 +41,6 @@ function App() {
 		for (let i = 0; i < 10; i++) {
 			cardsArr.push(CreateCard());
 		}
-
-		console.log(cardsArr);
 		return cardsArr;
 	}
 
@@ -80,7 +83,7 @@ function App() {
 				onAfterClose={resetGame}
 			>
 				<>
-					{score === 10 && <Confetti />}
+					{score === 10 && <Confetti width={width} height={height} />}
 					<h2>Game Over!</h2>
 					<p>Your score is {score} / 10</p>
 					<button onClick={toggleModal}>Close</button>
